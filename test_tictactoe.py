@@ -4,16 +4,15 @@ def test_retone():
     assert tictactoe.retone() == 1
 
 def test_init():
-    plateau = tictactoe.Plateau()
-    assert plateau.plateau == [[' '] * 3] * 3
+    jeu = tictactoe.Jeu()
+    assert jeu.plateau == [[' '] * 3] * 3
 
 def test_play():
-    plateau = tictactoe.Plateau()
+    jeu = tictactoe.Jeu()
     for i in range(3):
-        print(plateau.plateau)
-        plateau.play(i+1, 1)
-    assert plateau.last_player
-    assert plateau.plateau == [
+        jeu.play(i+1, 1)
+    assert jeu.last_player
+    assert jeu.plateau == [
         ['O', ' ', ' '],
         ['X', ' ', ' '],
         ['O', ' ', ' '],

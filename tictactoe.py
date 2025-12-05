@@ -1,7 +1,7 @@
 def retone():
     return 1
 
-class Plateau:
+class Jeu:
     def __init__(self):
         self.plateau = [
         [' ', ' ', ' '],
