@@ -35,6 +35,3 @@ def test_win_horizontal():
         if i<4:
             assert not jeu.check_win(x, y)
     assert jeu.check_win(x, y)
-
-def test_false():
-    assert False
