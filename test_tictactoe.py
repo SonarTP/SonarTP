@@ -9,6 +9,12 @@ def test_init():
 
 def test_play():
     plateau = tictactoe.Plateau()
-    for i in range(7):
-        plateau.play()
+    for i in range(3):
+        print(plateau.plateau)
+        plateau.play(i+1, 1)
     assert plateau.last_player
+    assert plateau.plateau == [
+        ['O', ' ', ' '],
+        ['X', ' ', ' '],
+        ['O', ' ', ' '],
+    ]
